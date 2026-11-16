@@ -1,0 +1,65 @@
+body {
+  --h1-color: red;
+  --h2-color: yellow;
+  --h3-color: chartreuse;
+  --h4-color: aqua;
+  --h5-color: orange;
+  --h6-color: blue;
+}
+
+/* ---------------- single line & Multi-line code block modify ---------------- */
+
+/* `<text>` single line code modify */
+code {
+    color: #ff6b6b !important;
+}
+
+/* ```<Code>``` block modify */
+pre code {
+    color: #61dafb !important;
+    
+}
+
+/* ---------------- single line & Multi-line code block modify ---------------- */
+
+/*
+mark {
+    font-size: 0.8em !important;
+    background-color: transparent !important;
+    color: lime !important;  /* text color bhi change kar sakte ho */
+/*}*/
+
+
+span#apply {
+  color: #555;
+  font-style: italic;
+}
+
+
+/* ---------------- Color ---------------- */
+
+/*red*/
+span#r {
+  color: #FF2400
+}
+
+/*yellow*/
+span#y {
+  color: #f2e85c
+}
+
+/*green*/
+span#g {
+  color: #7dde92
+}
+
+/*blue*/
+span#b {
+  color: #6ec1e4
+}
+
+/*violet*/
+span#v {
+  color: #9b5de5
+}
+

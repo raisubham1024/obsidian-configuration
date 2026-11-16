@@ -1,0 +1,651 @@
+/*note :
+--callout-color: <r>, <g>, <b>    #mean callout ki heading ka color
+background-color: rgb (<r>, <g>, <b>)
+
+#sirf 'callout-color' set krney se aacha color pick hotey hai, "background color" property set na hee kro, jb tk koi aacha pic color na ho, wrna set na bhee krney se aacha color milta.
+*/
+
+
+
+.callout {
+    border-left: 2px solid;
+    border-radius: 10px;
+    
+}
+
+.callout[data-callout-metadata*="text-green"] .callout-content {
+  color: green;
+}
+
+  /* ----------------------------------- all -----------------------------------  */
+
+.callout {
+    padding: 14px;
+    background-color: rgba(var(--callout-color), 0.1);
+}
+
+
+/* ------------------------- coral_block ------------------------- */
+.callout[data-callout="fix"],
+.callout[data-callout="troubleshoot"],
+.callout[data-callout="chat"] {
+    --callout-color: 255, 127, 110;
+    border-left: 2px solid rgb(255, 127, 110);
+}
+
+
+/*-------------------------black_block-------------------------*/
+
+.callout[data-callout="ninja"],
+.markdown-rendered .callout[data-callout="ninja"],
+.markdown-preview-view .callout[data-callout="ninja"],
+.markdown-source-view.mod-cm6 .callout[data-callout="ninja"],
+.markdown-source-view.mod-cm6 .cm-callout .callout[data-callout="ninja"] {
+    --callout-color: 0,0,0;
+    --callout-blend-mode: normal;
+    mix-blend-mode: normal !important;
+    background-color: rgba(0,0,0,0.5) !important;
+    border-left: 1px solid rgb(255,255,255) !important;
+    border-radius: 8px;
+}
+/*-------------------------grey_block-------------------------*/
+
+.callout[data-callout="user"],
+.callout[data-callout="wrench"],
+.callout[data-callout="quote"],
+.callout[data-callout="arrow-right-grey"],
+.callout[data-callout="ruler"],
+.callout[data-callout="maths"],
+.callout[data-callout="cloud-setting"],
+.callout[data-callout="file-setting"],
+.callout[data-callout="folder-configuration"],
+.callout[data-callout="folder-setting"] {
+    --callout-color: 120,120,120;
+    border-left: 1px solid rgb(255,255,255);
+}
+
+
+
+
+
+/*-------------------------red_block-------------------------*/
+.callout[data-callout="lock"],
+.callout[data-callout="fast"],
+.callout[data-callout="active-scan"],
+.callout[data-callout="arrow-right-red"],
+.callout[data-callout="not"],
+.callout[data-callout="fire"],
+.callout[data-callout="hot"],
+.callout[data-callout="recon-red"],
+.callout[data-callout="flash"],
+.callout[data-callout="chat-warning"],
+.callout[data-callout="bug-off"],
+.callout[data-callout="nobug"],
+.callout[data-callout="code-fail"],
+.callout[data-callout="sad"],
+.callout[data-callout="love"],
+.callout[data-callout="heart"],
+.callout[data-callout="thumb-down"] {
+    --callout-color: 246, 2, 30;
+    background-color: rgb(55, 27, 31);
+    border-left: 2px solid rgb(255,0,0);
+
+}
+
+/* ------------------------- crimson_block ------------------------- */
+
+.callout[data-callout="exploit"],
+.callout[data-callout="danger"],
+.callout[data-callout="bug"],
+.callout[data-callout="fail"],
+.callout[data-callout="ban"] {
+    --callout-color: 220, 20, 60;
+    border-left: 2px solid rgb(220, 20, 60);
+}
+
+
+/* ------------------------- teal_block ------------------------- */
+
+.callout[data-callout="website"],
+.callout[data-callout="web"] {
+    --callout-color: 20, 184, 166;
+    border-left: 2px solid rgb(20, 184, 166);
+}
+
+
+/*-------------------------lime_block-------------------------*/
+
+.callout[data-callout="compare"] {
+    --callout-color: 163, 230, 53;
+    border-left: 2px solid rgb(163, 230, 53);
+}
+
+
+
+/*-------------------------green_block-------------------------*/
+
+.callout[data-callout="hammer"],
+.callout[data-callout="unlock"],
+.callout[data-callout="key"],
+.callout[data-callout="happy"],
+.callout[data-callout="passive-scan"],
+.callout[data-callout="recon-green"],
+.callout[data-callout="arrow-right-green"],
+.callout[data-callout="check"],
+.callout[data-callout="add"],
+.callout[data-callout="thumb-up"]{
+    --callout-color: 0, 226, 117;
+    border-left: 2px solid rgb(0,255,0);  
+}
+
+
+/*-------------------------blue_block-------------------------*/
+.callout[data-callout="info"],
+.callout[data-callout="imp"],
+.callout[data-callout="recon-blue"],
+.callout[data-callout="facebook"],
+.callout[data-callout="github"],
+.callout[data-callout="instagram"],
+.callout[data-callout="youtube"],
+.callout[data-callout="twitter"],
+.callout[data-callout="linkedin"],
+.callout[data-callout="gitlab"],
+.callout[data-callout="note"],
+.callout[data-callout="measure"],
+.callout[data-callout="arrow-right-blue"] {
+    --callout-color: 0, 0, 255;
+    border-left: 3px solid rgb(0,0,255);     
+}
+
+
+/*-------------------------skyblue_block-------------------------*/
+.callout[data-callout="shield"],
+.callout[data-callout="protect"],
+.callout[data-callout="notification"],
+.callout[data-callout="edit"],
+.callout[data-callout="file-edit"],
+.callout[data-callout="hidden-file-edit"],
+.callout[data-callout="configuration-file-edit"],		
+.callout[data-callout="arrow-right-skyblue"],
+.callout[data-callout="magic"]
+ {
+    --callout-color: 0,191,255;
+    border-left: 2px solid rgb(0, 191, 255);
+}
+
+
+/*-------------------------purple_block-------------------------*/
+
+.callout[data-callout="remember"],
+.callout[data-callout="victory"] {
+    --callout-color: 168, 85, 247;
+    border-left: 2px solid rgb(168, 85, 247);
+}
+ 
+
+/* ------------------------- indigo_block ------------------------- */
+
+.callout[data-callout="todo"] {
+    --callout-color: 99, 102, 241;
+    border-left: 2px solid rgb(99, 102, 241);
+}
+
+
+/*-------------------------yellow_block-------------------------*/
+
+
+.callout[data-callout="idea"] {
+    --callout-color: 255, 235, 59;
+    border-left: 2px solid rgb(255, 235, 59);
+}
+
+
+/*-------------------------orange_block-------------------------*/
+
+.callout[data-callout="faq"],
+.callout[data-callout="arrow-right-yellow"],
+.callout[data-callout="alert"],
+.callout[data-callout="warning"] {
+    --callout-color: 255,165,0;
+    border-left: 2px solid rgb(255,165,0);
+
+}
+
+
+/*-------------------------aqua_block-------------------------*/
+
+
+.callout[data-callout="abstract"],
+.callout[data-callout="arrow-right-aqua"],
+.callout[data-callout="task"],
+.callout[data-callout="eye-on"],
+.callout[data-callout="eye-off"],
+.callout[data-callout="tip"],
+.callout[data-callout="list"],
+.callout[data-callout="footprints"],
+.callout[data-callout="reconnaissance"] {
+    --callout-color: 0,255,255;
+    border-left: 2px solid rgb(0,255,255);     
+}
+
+/*-------------------------gold_block-------------------------*/
+.callout[data-callout="bookmark"],
+.callout[data-callout="pin"],
+.callout[data-callout="award"],
+.callout[data-callout="arrow-right-gold"],
+.callout[data-callout="pending"] {
+    --callout-color: 255,215,0;  
+    border-left: 2px solid rgb(221, 199, 4); 
+}
+
+
+/*-------------------------pink_block-------------------------*/
+
+.callout[data-callout="arrow-right-pink"],
+.callout[data-callout="music"] {
+    --callout-color: 255,165,255;  
+    border-left: 2px solid rgb(192,93,177);
+}
+
+
+/*-------------------------dark_pink_block-------------------------*/
+
+.callout[data-callout="arrow-right-darkpink"],
+.callout[data-callout="steps"],
+.callout[data-callout="index"],
+.callout[data-callout="fav"] {
+    --callout-color: 244, 61, 255;
+    border-left: 2px solid rgb(255,0,252); 
+
+}
+
+
+
+/*-------------------------white_block-------------------------*/
+
+.callout[data-callout="arrow-right-white"],
+.callout[data-callout="code"],
+.callout[data-callout="shopping"],
+.callout[data-callout="cart"],
+.callout[data-callout="report"] {
+    --callout-color: 255,255,255 ; 
+}
+
+
+/* ------------------------- brown_block ------------------------- */
+
+.callout[data-callout="setting"] {
+    --callout-color: 205, 127, 50;
+    border-left: 2px solid rgb(205, 127, 50);
+}
+
+
+
+
+
+
+  /* ----------------------------------- Metadata COLORS -----------------------------------  */
+
+/*Example : jaisey INFO callout to blue hee rhta, prr INFO hee block ho lekin color RED ho to hm usko callout mai aisey likh paatey [!info | red] , ye Metadata colors k karan hee ho paata*/
+
+.callout[data-callout-metadata="green"] { --callout-color: 15, 255, 0; }
+.callout[data-callout-metadata="red"] { --callout-color: 255, 0, 0; }
+.callout[data-callout-metadata="blue"] { --callout-color: 0, 120, 255;}
+.callout[data-callout-metadata="aqua"] {  --callout-color: 0, 255, 255; }
+.callout[data-callout-metadata="purple"] { --callout-color: 168, 85, 247; }
+.callout[data-callout-metadata="orange"] { --callout-color: 255, 120, 0; }
+.callout[data-callout-metadata="yellow"] { --callout-color: 255, 235, 59; }
+.callout[data-callout-metadata="lime"]   { --callout-color: 163, 230, 53; }
+.callout[data-callout-metadata="teal"]   { --callout-color: 20, 184, 166; }
+.callout[data-callout-metadata="brown"]  { --callout-color: 205, 127, 50; }
+.callout[data-callout-metadata="crimson"]{ --callout-color: 220, 20, 60; }
+.callout[data-callout-metadata="indigo"] { --callout-color: 99, 102, 241; }
+.callout[data-callout-metadata="coral"]  { --callout-color: 255, 127, 110; }
+
+
+
+  /* ----------------------------------- Custom -----------------------------------  */
+
+
+.callout[data-callout="thumb-up"] {
+    --callout-icon: lucide-thumbs-up;
+
+}
+
+.callout[data-callout="thumb-down"] {
+    --callout-icon: lucide-thumbs-down;
+
+}
+
+.callout[data-callout="remember"] {
+    --callout-icon: lucide-brain;
+
+}
+
+.callout[data-callout="magic"] {
+    --callout-icon: lucide-wand-sparkles;
+
+}
+
+.callout[data-callout="pending"] {
+    --callout-icon: lucide-hourglass;
+
+}
+
+
+.callout[data-callout="danger"] {
+    --callout-icon: lucide-skull;
+}
+
+
+.callout[data-callout="flash"] {
+    --callout-icon: zap;
+}
+
+
+.callout[data-callout="chat"] {
+  --callout-icon: lucide-message-square-more;
+  
+}
+
+
+
+.callout[data-callout="fav"] {
+  --callout-icon: lucide-star;
+  
+}
+
+
+.callout[data-callout="chat-warning"] {
+  --callout-icon: lucide-message-square-warning;
+  
+}
+
+.callout[data-callout="measure"],
+.callout[data-callout="ruler"] {
+    --callout-icon: lucide-ruler;
+  
+}
+
+.callout[data-callout="maths"] {
+    --callout-icon: lucide-sigma;
+}
+
+.callout[data-callout="add"] {
+    --callout-icon: lucide-circle-plus;
+}
+
+
+.callout[data-callout="bookmark"] {
+    --callout-icon: lucide-album;
+}
+
+
+
+.callout[data-callout="award"] {
+    --callout-icon: lucide-award;
+
+}
+
+.callout[data-callout="not"],
+.callout[data-callout="ban"] {
+    --callout-icon: lucide-ban;
+}
+
+
+.callout[data-callout="notification"] {
+    --callout-icon: lucide-bell-ring;
+}
+
+
+
+
+.callout[data-callout="steps"],
+.callout[data-callout="index"] {
+    --callout-icon: lucide-list;
+}
+
+.callout[data-callout="list"] {
+    --callout-icon: lucide-scroll-text;
+    --callout-color: 0,255,255;
+}
+
+
+.callout[data-callout="pin"] {
+    --callout-icon: lucide-pin;
+}
+
+
+.callout[data-callout="web"] {
+    --callout-icon: lucide-chromium;
+}
+
+  /* ----------------------------------- Built-in modify -----------------------------------  */
+
+.callout[data-callout="check"] {
+    --callout-icon: lucide-square-check-big;
+}
+
+.callout[data-callout="note"] {
+    --callout-icon: lucide-notebook-pen;
+}
+
+
+
+.callout[data-callout="abstract"],
+.callout[data-callout="task"] {
+    --callout-icon: lucide-clipboard-list;
+}
+
+
+.callout[data-callout="arrow-right-white"],
+.callout[data-callout="arrow-right-grey"],
+.callout[data-callout="arrow-right-gold"],
+.callout[data-callout="arrow-right-yellow"],
+.callout[data-callout="arrow-right-pink"],
+.callout[data-callout="arrow-right-darkpink"],
+.callout[data-callout="arrow-right-green"],
+.callout[data-callout="arrow-right-skyblue"],
+.callout[data-callout="arrow-right-blue"],
+.callout[data-callout="arrow-right-red"],
+.callout[data-callout="arrow-right-aqua"],
+.callout[data-callout="arrow-right"] {
+    --callout-icon: lucide-circle-arrow-right;
+}
+
+.callout[data-callout="eye-on"] {
+    --callout-icon: lucide-eye;
+}
+
+.callout[data-callout="eye-off"] {
+    --callout-icon: lucide-eye-off;
+}
+
+
+.callout[data-callout="todo"] {
+    --callout-icon: lucide-list-todo;
+}
+
+
+.callout[data-callout="hot"],
+.callout[data-callout="fire"],
+.callout[data-callout="tip"],
+.callout[data-callout="imp"] {
+    --callout-icon: lucide-flame;
+}
+
+
+.callout[data-callout="heart"],
+.callout[data-callout="love"] {
+    --callout-icon: lucide-heart;
+}
+
+
+  /* ----------------------------------- Social media -----------------------------------  */
+
+.callout[data-callout="facebook"] {
+    --callout-icon: lucide-facebook;
+}
+
+.callout[data-callout="github"] {
+    --callout-icon: lucide-github;
+}
+
+.callout[data-callout="instagram"] {
+    --callout-icon: lucide-instagram;
+}
+
+.callout[data-callout="youtube"] {
+    --callout-icon: lucide-youtube;
+}
+
+.callout[data-callout="twitter"] {
+    --callout-icon: lucide-twitter;
+}
+
+.callout[data-callout="linkedin"] {
+    --callout-icon: lucide-linkedin;
+}
+
+.callout[data-callout="gitlab"] {
+    --callout-icon: lucide-gitlab;
+}
+
+
+
+  /* ----------------------------------- emotions -----------------------------------  */
+
+.callout[data-callout="sad"] {
+    --callout-icon: lucide-frown;
+}
+
+.callout[data-callout="happy"] {
+    --callout-icon: lucide-smile;
+}
+
+
+
+
+  /* ----------------------------------- Developer -----------------------------------  */
+
+.callout[data-callout="code-fail"] {
+    --callout-icon: lucide-file-x;
+}
+
+.callout[data-callout="setting"] {
+    --callout-icon: lucide-cog;
+}
+
+
+.callout[data-callout="cloud-setting"] {
+    --callout-icon: lucide-cloud-cog;
+}
+
+.callout[data-callout="file-configuration"],
+.callout[data-callout="file-setting"] {
+    --callout-icon: lucide-file-cog;
+}
+
+
+.callout[data-callout="folder-configuration"],
+.callout[data-callout="folder-setting"] {
+    --callout-icon: lucide-folder-cog;
+}
+
+
+
+.callout[data-callout="file-edit"],
+.callout[data-callout="edit"] {
+    --callout-icon: lucide-file-pen;
+}
+
+
+.callout[data-callout="configuration-file-edit"],
+.callout[data-callout="hidden-file-edit"] {
+    --callout-icon: lucide-file-pen-line;
+}
+
+.callout[data-callout="code"] {
+    --callout-icon: lucide-braces;
+}
+
+.callout[data-callout="bug-off"],
+.callout[data-callout="nobug"] {
+    --callout-icon: lucide-bug-off;
+}
+
+
+  /* ----------------------------------- Cyber -----------------------------------  */
+
+.callout[data-callout="footprints"],
+.callout[data-callout="reconnaissance"] {
+    --callout-icon: lucide-footprints;
+}
+
+.callout[data-callout="active-scan"] {
+    --callout-icon: lucide-radar;
+}
+
+.callout[data-callout="passive-scan"] {
+    --callout-icon: lucide-radar;
+}
+
+.callout[data-callout="recon-green"],
+.callout[data-callout="recon-red"],
+.callout[data-callout="recon-blue"] {
+    --callout-icon: lucide-search;
+}
+
+.callout[data-callout="report"] {
+    --callout-icon: lucide-clipboard-list;
+}
+
+
+
+.callout[data-callout="exploit"] {
+    --callout-icon: lucide-skull;
+}
+
+.callout[data-callout="idea"] {
+    --callout-icon: lucide-lightbulb;
+}
+
+.callout[data-callout="user"] {
+    --callout-icon: lucide-user;
+}
+
+  /* ----------------------------------- Entertainment & Distraction -----------------------------------  */
+
+.callout[data-callout="music"] {
+    --callout-icon: lucide-music;
+}
+
+.callout[data-callout="shopping"],
+.callout[data-callout="cart"] {
+    --callout-icon: lucide-shopping-cart;
+}
+
+
+  /* ----------------------------------- Tool -----------------------------------  */
+
+
+.callout[data-callout="hammer"] {
+    --callout-icon: lucide-hammer;
+}
+
+.callout[data-callout="wrench"] {
+    --callout-icon: lucide-wrench;
+}
+
+
+
+
+.callout[data-callout="shield"],
+.callout[data-callout="protect"] {
+    --callout-icon: lucide-shield;
+}
+
+
+
+
+

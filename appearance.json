@@ -1,0 +1,11 @@
+{
+  "showViewHeader": true,
+  "enabledCssSnippets": [
+    "ai-custom-callouts",
+    "style",
+    "custom-callouts",
+    "custom-emoji-callout"
+  ],
+  "showRibbon": true,
+  "theme": "obsidian"
+}

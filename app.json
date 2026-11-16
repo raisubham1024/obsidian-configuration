@@ -1,0 +1,18 @@
+{
+  "readableLineLength": false,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "All Uncategories Notes",
+  "attachmentFolderPath": "./Attachments",
+  "showLineNumber": false,
+  "spellcheck": false,
+  "alwaysUpdateLinks": true,
+  "defaultViewMode": "preview",
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "deleteUnlinkedAttachments": "ask"
+}

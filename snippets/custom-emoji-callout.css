@@ -1,0 +1,78 @@
+/* =========================================================
+   Custom Emoji Callouts
+   Rule: sirf callout ke APNE title ka icon badlo (child callouts ka nahi)
+   Naya emoji add karne ke liye: ek block niche jodo
+   aur "SVG hide" wali list mein selector add karo.
+   ========================================================= */
+
+
+/* ------------------------- Emojis ------------------------- */
+
+/* Ninja */
+.callout[data-callout="ninja"] > .callout-title > .callout-icon::before {
+    content: "🥷";
+}
+
+/* troubleshoot / Fix */
+.callout[data-callout="fix"] > .callout-title > .callout-icon::before,
+.callout[data-callout="troubleshoot"] > .callout-title > .callout-icon::before {
+    content: "🛠️";
+}
+
+/* alert */
+.callout[data-callout="alert"] > .callout-title > .callout-icon::before {
+    content: "⚠️";
+}
+
+/* compare */
+.callout[data-callout="compare"] > .callout-title > .callout-icon::before {
+    content: "⚖️";
+}
+
+/* Web/Website */
+.callout[data-callout="website"] > .callout-title > .callout-icon::before,
+.callout[data-callout="web"] > .callout-title > .callout-icon::before {
+    content: "🌐";
+}
+
+/* Fast */
+.callout[data-callout="fast"] > .callout-title > .callout-icon::before {
+    content: "🚀";
+}
+
+/* Victory */
+.callout[data-callout="victory"] > .callout-title > .callout-icon::before {
+    content: "✌";
+}
+
+/* Key */
+.callout[data-callout="key"] > .callout-title > .callout-icon::before {
+    content: "🔑";
+}
+
+/* Lock */
+.callout[data-callout="lock"] > .callout-title > .callout-icon::before {
+    content: "🔒";
+}
+
+/* Unlock */
+.callout[data-callout="unlock"] > .callout-title > .callout-icon::before {
+    content: "🔓";
+}
+
+
+/* ------------------- SVG hide (default icon) ------------------- */
+
+.callout[data-callout="fix"] > .callout-title > .callout-icon svg,
+.callout[data-callout="troubleshoot"] > .callout-title > .callout-icon svg,
+.callout[data-callout="compare"] > .callout-title > .callout-icon svg,
+.callout[data-callout="ninja"] > .callout-title > .callout-icon svg,
+.callout[data-callout="alert"] > .callout-title > .callout-icon svg,
+.callout[data-callout="web"] > .callout-title > .callout-icon svg,
+.callout[data-callout="fast"] > .callout-title > .callout-icon svg,
+.callout[data-callout="victory"] > .callout-title > .callout-icon svg,
+.callout[data-callout="key"] > .callout-title > .callout-icon svg,
+.callout[data-callout="lock"] > .callout-title > .callout-icon svg,
+.callout[data-callout="unlock"] > .callout-title > .callout-icon svg {
+    display: none;
+}
